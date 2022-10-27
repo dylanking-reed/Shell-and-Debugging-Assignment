@@ -24,4 +24,7 @@ b) In order to debug this code, I read the code with an eye out for obvious erro
    that `m` was only used to initalize `z`. I also noticed that `argc` was typed as a 
    `char*`! I determined that this program was supposed to create a `point2d` from 
    command-line arguments. I concluded that this program was riddled with bugs, and began 
-   work fixing them.
+   work fixing them. After fixing all of the glaring bugs, I checked my code using 
+   valgrind and found that the memory leaks had been repaired. I manually tested the 
+   command-line behavior, and it worked as expected. I considered the bugs to have been
+   found and fixed.
