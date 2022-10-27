@@ -15,3 +15,13 @@ a) In order to debug this code, I tried first to determine what it was doing. As
    the function, as I'm under the impression that special-casing 0 is necessary in
    an exponentiation algorithm. After adding this, my tests passed, and I considered the 
    bug to have been found & fixed.
+
+b) In order to debug this code, I read the code with an eye out for obvious errors and 
+   tried to determine what it was doing. As the code reads three values from `argv`, I
+   assumed the program expected three arguments. When I saw `malloc`s, I looked to the 
+   bottom of the function for a `free()`s, and when I didn't find them, concluded that the 
+   program had memory leaks. I also noticed that `z` was initialized but never used, and 
+   that `m` was only used to initalize `z`. I also noticed that `argc` was typed as a 
+   `char*`! I determined that this program was supposed to create a `point2d` from 
+   command-line arguments. I concluded that this program was riddled with bugs, and began 
+   work fixing them.
