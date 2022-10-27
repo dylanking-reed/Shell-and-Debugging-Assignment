@@ -18,5 +18,3 @@ b) An example of a setting that is important to how I interact with the shell in
    file on my local machine is:  
    `/mnt/c/Users/School Dylan King/Documents/Reed/Cs 221/Shell-and-Debugging-Assignment/1-Shell.md`
    which, at 96 characters long, wraps the line in my 80 char wide terminal.
-
-c) `head -n50 Logistics.tex | grep "that" -wo | wc -l`
